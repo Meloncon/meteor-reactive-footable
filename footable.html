@@ -1,16 +1,16 @@
 <template name="footable">
 	<table class="footable">
-		{{> Template.contentBlock}}
+		{{> UI.contentBlock}}
 	</table>
 </template>
 
 <template name="fooBody">
-	{{#each mapped items}}
+	{{#each mapped this}}
 		{{#if $last}}
 			{{redrawFootable}}
-			{{> Template.contentBlock}}
+			{{> UI.contentBlock this}}
 		{{else}}
-			{{> Template.contentBlock}}
+			{{> UI.contentBlock this}}
 		{{/if}}
 	{{/each}}
 </template>
