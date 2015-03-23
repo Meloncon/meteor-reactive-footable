@@ -8,3 +8,17 @@ Template.footable.rendered = function () {
 		$(table).attr(value, Template.currentData()[value]);
 	});
 };
+
+Template.fooBody.helpers({
+	mapped: function (arr) {
+		var mappedArray = arr.map(function (item, index) {
+			item.$last = index === arr.length-1;
+			return item;
+		});
+
+		return mappedArray || [];
+	},
+	redrawFootable: function () {
+		
+	}
+});
