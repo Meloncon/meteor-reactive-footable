@@ -21,7 +21,32 @@ Example:
 		</tbody>
 	{{/footable}}
 
-You can pass any Footable "data-" variables to the helper by simply providing them as context variables, like so:
+You can pass any Footable top-level "data-" variables to the helper by simply providing them as context variables, like so:
 
 	{{#footable data-sort=true}}
 	{{/footable}}
+
+For any Footable table header variables like, data-hide="", you can set those as you normally would:
+
+	{{#footable data-sort=true}}
+		<thead>
+			<tr>
+				<td data-toggle="true">First Name</td>
+				<td data-hide="phone">Last Name</td>
+			</tr>
+		<thead>
+		<tbody>
+			{{#fooBody people}}
+				<tr>
+					<td>{{firstName}}</td>
+					<td>{{lastName}}</td>
+				</tr>
+			{{/fooBody}}
+		</tbody>
+	{{/footable}}
+
+## TODO
+
+- Implement variable type checks
+- Add package tests
+- Add code to generate the HTML table markup for the header given certain parameters
