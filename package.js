@@ -15,7 +15,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.4.2');
-  api.use('mrt:footable');
+  api.use('mrt:footable@2.0.1-4.4');
   api.use('templating');
   //api.addFiles('footable.js');
   api.addFiles(['footable.html','footable.js'], 'client');
