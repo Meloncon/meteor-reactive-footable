@@ -2,6 +2,9 @@
 
 The goal of this smart package is to provide an easy (and Meteoric) way to redraw a Footable instance when a reactive change occurs to the contents it's displaying. Essentially, making footables reactive without the current boilerplate code one has to place on each templates' render callback.
 
+## Installation
+	meteor add meloncon:footable
+
 Example:
 
 	{{#footable}}
