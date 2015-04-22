@@ -7,7 +7,6 @@ Template.footable.rendered = function () {
 		$(table).attr(value, Template.currentData()[value]);
 	});
 
-	console.log('Initializing Footables...');
 	$(table).footable();
 };
 
@@ -18,7 +17,6 @@ Template.fooBody.rendered = function () {
 
 Template.fooBody.helpers({
 	mapped: function (arr) {
-		console.log(arr);
 		var mappedArray = arr.map(function (item, index) {
 			item.$last = index === arr.length-1;
 			return item;
