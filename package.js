@@ -1,6 +1,6 @@
 Package.describe({
   name: 'meloncon:footable',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'Responsive HTML Table for Meteor',
   description: 'Responsive HTML Table for Meteor',
