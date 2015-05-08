@@ -13,7 +13,7 @@ Example:
 				<td>First Name</td>
 				<td>Last Name</td>
 			</tr>
-		<thead>
+		</thead>
 		<tbody>
 			{{#fooBody people}}
 				<tr>
@@ -37,7 +37,7 @@ For any Footable table header variables like, data-hide="", you can set those as
 				<td data-toggle="true">First Name</td>
 				<td data-hide="phone">Last Name</td>
 			</tr>
-		<thead>
+		</thead>
 		<tbody>
 			{{#fooBody people}}
 				<tr>
